@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zeyada', cursive;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Video Background */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Text Boxes */
+.text {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.952);
+    padding: 20px;
+    border-radius: 9px;
+    text-align: center;
+    box-shadow: 1px 15px 20px rgba(0, 0, 0, 0.5);
+    cursor: grab;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* When dragging, make it pop */
+.text:active {
+    transform: scale(1.05);
+}
+
+/* Image inside text div */
+.text img {
+    max-height: 150px;
+    max-width: 100%;
+    user-select: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.text audio {
+    width: 80%;
+    margin-top: 10px;
+}
+/* Font Styling */
+p {
+    font-size: 30px;
+    color: #000;
+    text-shadow: 1px 1px 1px #fff;
+}
